@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
+import Graph.AdjList;
+import Graph.AdjMatrix;
+
 public class Example {
 
 	public static void main(String[] args) {
@@ -11,6 +14,27 @@ public class Example {
 //		selectionSort(getRandom(1000));
 //		insertSort(getRandom(5));
 		
+		
+		AdjMatrix MG1 = new AdjMatrix();
+		for(int i=0; i<9; i++){
+			MG1.insertVertex(i);
+		}
+		MG1.insertEdge(0, 1);
+		MG1.insertEdge(0, 7);
+		MG1.insertEdge(1, 2);
+		MG1.insertEdge(1, 7);
+		MG1.insertEdge(2, 3);
+		MG1.insertEdge(2, 8);
+		MG1.insertEdge(2, 5);
+		MG1.insertEdge(3, 4);
+		MG1.insertEdge(3, 5);
+		MG1.insertEdge(4, 5);
+		MG1.insertEdge(5, 5);
+		MG1.insertEdge(6, 7);
+		MG1.insertEdge(6, 8);
+		MG1.insertEdge(7, 8);
+		System.out.println("인접행렬");
+		MG1.printMatrix();
 	
 	}
 	
