@@ -9,7 +9,9 @@ public class Example {
 //		getRandom(100);
 		
 //		selectionSort(getRandom(1000));
-		insertSort(getRandom(5));
+//		insertSort(getRandom(5));
+		
+	
 	}
 	
 	public static void insertSort(int[] A){
